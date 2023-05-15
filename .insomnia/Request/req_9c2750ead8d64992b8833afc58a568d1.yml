@@ -1,0 +1,29 @@
+_id: req_9c2750ead8d64992b8833afc58a568d1
+type: Request
+parentId: wrk_efd2721de5bc46a4beee3bb5c399e5be
+modified: 1684159755977
+created: 1684157999962
+url: http://qa-api-acuerdo.asapswfactory.ar/api/document/
+name: New Request
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_aefd141c2ccf493b982db98f167ca8fe
+      name: ""
+      value: ""
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+authentication: {}
+metaSortKey: -1684157999962
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
