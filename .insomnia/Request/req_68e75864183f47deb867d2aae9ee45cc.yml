@@ -1,0 +1,27 @@
+_id: req_68e75864183f47deb867d2aae9ee45cc
+type: Request
+parentId: fld_bc137594af0a49a19af2e3fdac16ed35
+modified: 1685445549025
+created: 1685445549025
+url: "{{keycloak_url}}/admin/realms/{{realm}}/identity-provider/import-config"
+name: "Import identity provider from uploaded JSON file [SAT] "
+description: Import identity provider from uploaded JSON file
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549025
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

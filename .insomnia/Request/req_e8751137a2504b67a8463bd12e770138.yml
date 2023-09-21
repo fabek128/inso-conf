@@ -1,0 +1,39 @@
+_id: req_e8751137a2504b67a8463bd12e770138
+type: Request
+parentId: fld_721d210e2601438a8e6c7dce6d4a8b62
+modified: 1685445549067
+created: 1685445549067
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/scope-mappin\
+  gs/realm"
+name: "Add a set of realm-level roles to the client’s scope  [SAT] "
+description: |
+  Add a set of realm-level roles to the client’s scope
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "id": "ea522e2b-1e8f-42f6-9cc6-981fd5dd2114",
+        "name": "Investigator2",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "heroes",
+        "attributes": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549067
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,31 @@
+_id: req_ec9a822f0c88400590f3175ce908ae18
+type: Request
+parentId: fld_a329e47ce7af424698ae99efabad9eb4
+modified: 1685696539066
+created: 1685445549080
+url: "{{keycloakurl}}/admin/realms/{{realmname}}/users/04d92bca-0a6d-4b07-9f6e-\
+  c8ed35fa7af8/reset-password"
+name: Set up a new password for the user [SAT]
+description: |
+  Set up a new password for the user.
+method: PUT
+body:
+  mimeType: application/json
+  text: '{"type":"password","value":"nosenose1","temporary":false}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549080
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

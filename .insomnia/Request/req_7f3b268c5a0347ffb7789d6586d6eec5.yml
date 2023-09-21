@@ -1,0 +1,27 @@
+_id: req_7f3b268c5a0347ffb7789d6586d6eec5
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548989
+created: 1685445548989
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/required-actions"
+name: Get required actions [SAT]
+description: Get required actions Returns a list of required actions.
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548989
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

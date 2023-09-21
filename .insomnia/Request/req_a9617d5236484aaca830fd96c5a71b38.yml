@@ -1,0 +1,31 @@
+_id: req_a9617d5236484aaca830fd96c5a71b38
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549012
+created: 1685445549012
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/offline-sessions"
+name: Get application offline sessions [SAT]
+description: Get offline sessions for client Returns a list of offline user
+  sessions associated with this client
+method: GET
+body: {}
+parameters:
+  - name: scope
+    value: ""
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549012
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

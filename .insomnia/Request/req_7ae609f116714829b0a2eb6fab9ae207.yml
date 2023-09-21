@@ -1,0 +1,39 @@
+_id: req_7ae609f116714829b0a2eb6fab9ae207
+type: Request
+parentId: fld_20b52bb3e7854b6894067c2295fe23a5
+modified: 1685445549058
+created: 1685445549058
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles/{{roleName}}/composites"
+name: "Add a composite to the role [SAT] "
+description: |
+  Add a composite to the role
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    [
+       {
+        "name": "Sub-Investigator",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "Investigator",
+        "description": "desc"
+    	}
+    ]
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549058
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

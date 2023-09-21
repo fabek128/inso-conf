@@ -1,0 +1,28 @@
+_id: req_1885ce684f1d4c8085c130a7e5d4741c
+type: Request
+parentId: fld_68e33fe107e14a12876e166f5da84655
+modified: 1685445549001
+created: 1685445549001
+url: "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{groupId}}/role-mappings/\
+  clients/{{clientId}}/available"
+name: Get available client-level roles that can be mapped to the user [SAT]
+description: Get available client-level roles that can be mapped to the user
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549001
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

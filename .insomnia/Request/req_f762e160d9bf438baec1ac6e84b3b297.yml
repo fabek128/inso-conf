@@ -1,0 +1,51 @@
+_id: req_f762e160d9bf438baec1ac6e84b3b297
+type: Request
+parentId: fld_72de30e05b44446897c872cc64110998
+modified: 1689433537531
+created: 1689104273282
+url: localhost:8080/api/pack
+name: crear un pack
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "TEST DE PACK UPDATED",
+      "description": "PACK TESTS",
+      "price":5,
+      "startDate": "2023-07-10T19:39:23.161Z",
+      "endDate": "2023-12-10T19:39:23.161Z",
+    	"register":false,
+      "active": true,
+    	"register":true,
+    	"features": [
+        {
+          "name": "Documentos",
+          "usageLimit": 2,
+          "description": "string",
+          "active": true
+        },
+    		 {
+          "name": "Firmas",
+          "usageLimit": 2,
+          "description": "string",
+          "active": true
+        }
+      ]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: TEST-330633137765083-071010-fd4b8036ad2b751c53ce7be1e6192c9e-184028570
+metaSortKey: -1688495231976.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

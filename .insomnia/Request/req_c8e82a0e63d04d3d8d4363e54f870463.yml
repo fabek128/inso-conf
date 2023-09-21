@@ -1,0 +1,28 @@
+_id: req_c8e82a0e63d04d3d8d4363e54f870463
+type: Request
+parentId: fld_ff6d2a3c93be4fc29ccc72725cf0d0d5
+modified: 1694705890582
+created: 1685445549080
+url: "{{keycloak_url}}/admin/realms/{{realm}}"
+name: Get all  [SAT]
+description: Get themes, social providers, auth providers, and event listeners
+  available on this server
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549080
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

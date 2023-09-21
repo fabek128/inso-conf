@@ -1,0 +1,38 @@
+_id: req_23b6bb843e924c3a9ed04b9fa14c7d68
+type: Request
+parentId: fld_9597d1b16b0e4fa491042b9ba2172ad2
+modified: 1685445549035
+created: 1685445549035
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/protocol-map\
+  pers/models/af0bf361-7882-4d10-a38c-40ffddba9a59"
+name: "Update the mapper [SAT] "
+description: Update the mapper
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "id": "af0bf361-7882-4d10-a38c-40ffddba9a59",
+        "name": "protocol-mapper-2",
+        "protocol": "openid-connect",
+        "protocolMapper": "oidc-usermodel-property-mapper",
+        "consentRequired": false,
+        "config": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549035
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

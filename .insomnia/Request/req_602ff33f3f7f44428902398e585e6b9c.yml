@@ -1,0 +1,36 @@
+_id: req_602ff33f3f7f44428902398e585e6b9c
+type: Request
+parentId: fld_9597d1b16b0e4fa491042b9ba2172ad2
+modified: 1685445549033
+created: 1685445549033
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/protocol-map\
+  pers/models"
+name: "Create a mapper for a client [SAT] "
+description: Create a mapper for a client
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "protocol-mapper-2",
+    	"protocol": "openid-connect",
+    	"protocolMapper": "oidc-usermodel-property-mapper",
+    	"config": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549033
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

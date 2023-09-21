@@ -1,0 +1,27 @@
+_id: req_d20707639bfa4a00984fbc09a4f4130e
+type: Request
+parentId: fld_20b52bb3e7854b6894067c2295fe23a5
+modified: 1685445549057
+created: 1685445549057
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles/{{roleName}}"
+name: "Get a role by name[SAT] "
+description: Get a role by name
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549057
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

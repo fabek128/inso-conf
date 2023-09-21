@@ -1,0 +1,45 @@
+_id: req_52cfdbc285af45e9b0d71d3d9e38b937
+type: Request
+parentId: fld_5ee4da04bb7944a5baa13af123ca1190
+modified: 1685445549018
+created: 1685445549018
+url: "{{keycloak_url}}/admin/realms/{{realm}}/components/{{componentId}}"
+name: Update a specific component [SAT]
+description: Update a component from id
+method: PUT
+body:
+  mimeType: application/json
+  text: >-
+    {
+        "id": "7a084caa-36f4-4ea4-8dcb-56b1b189c2fa",
+        "name": "Trusted Hosts",
+        "providerId": "trusted-hosts",
+        "providerType": "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy",
+        "parentId": "heroes",
+        "subType": "anonymous",
+        "config": {
+            "host-sending-registration-request-must-match": [
+                "true"
+            ],
+            "client-uris-must-match": [
+                "true"
+            ]
+        }
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549018
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

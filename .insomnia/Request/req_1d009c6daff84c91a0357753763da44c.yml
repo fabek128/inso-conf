@@ -1,0 +1,27 @@
+_id: req_1d009c6daff84c91a0357753763da44c
+type: Request
+parentId: fld_ef927c241dbc4a649d757df8222af3d7
+modified: 1685445549002
+created: 1685445549002
+url: "{{keycloak_url}}/admin/realms/{{realm}}/client-scopes/{{clientScopeId}}"
+name: Delete the client scope[SAT]
+description: Delete the client scope
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549002
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

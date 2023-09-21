@@ -1,0 +1,28 @@
+_id: req_f82f78a874c143c5882fbbeb49f8fb6a
+type: Request
+parentId: fld_0d4d96d980b441918f4bd15cbdf0fe53
+modified: 1685445549069
+created: 1685445549069
+url: "{{keycloak_url}}/admin/realms/{{realm}}/user-storage/{{userStorageId}}/un\
+  link-users"
+name: "Unlink imported users from a storage provider  [SAT] "
+description: Unlink imported users from a storage provider
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549069
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

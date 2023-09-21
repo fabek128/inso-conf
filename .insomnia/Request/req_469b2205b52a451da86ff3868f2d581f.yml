@@ -1,0 +1,35 @@
+_id: req_469b2205b52a451da86ff3868f2d581f
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548994
+created: 1685445548994
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/flows/{{LowerCaseA\
+  liasFlow}}/executions/flow"
+name: Add new flow with new execution to existing flow [SAT]
+description: Add new flow with new execution to existing flow
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {"provider":"reset-password",
+    	"alias": "bff",
+    	"type": "generic",
+    	"description": "new flow bff"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548994
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

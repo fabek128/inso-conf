@@ -1,0 +1,28 @@
+_id: req_28a4a7c68b824cc683379c0156244a9c
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548982
+created: 1685445548982
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/executions/{{execu\
+  tionId}}"
+name: Get authentication execution [SAT]
+description: Get Single Execution
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548982
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

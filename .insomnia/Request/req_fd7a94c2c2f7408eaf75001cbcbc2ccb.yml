@@ -1,0 +1,39 @@
+_id: req_fd7a94c2c2f7408eaf75001cbcbc2ccb
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548993
+created: 1685445548993
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/required-actions/{\
+  {aliasRequiredAction}}"
+name: Update required action [SAT]
+description: Update required action
+method: PUT
+body:
+  mimeType: application/json
+  text: |-2
+        {
+        	"alias": "UPDATE_PASSWORD",
+            "name": "Update Password +",
+            "providerId": "UPDATE_PASSWORD",
+            "enabled": true,
+            "defaultAction": false,
+            "priority": 30,
+            "config": {}
+        }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548993
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

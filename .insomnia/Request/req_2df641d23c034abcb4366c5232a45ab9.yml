@@ -1,0 +1,43 @@
+_id: req_2df641d23c034abcb4366c5232a45ab9
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548983
+created: 1685445548983
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/executions/{{execu\
+  tionId}}"
+name: Update authentication execution [SAT]
+description: Update Execution
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "id": "23e192b0-2811-4441-9f66-99bd1c4687f6",
+        "authenticator": "auth-cookie",
+        "authenticatorFlow": false,
+        "requirement": "ALTERNATIVE",
+        "priority": 10,
+        "parentFlow": "bf2ffb04-39eb-4de9-b302-29f8d2735cbb",
+        "enabled": true,
+        "alternative": true,
+        "required": false,
+        "conditional": false,
+        "disabled": false
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548983
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

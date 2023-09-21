@@ -1,0 +1,28 @@
+_id: req_59d40985677741c2ab90621dd74bc91f
+type: Request
+parentId: fld_08f5752cac474971ba98e34da0cfb225
+modified: 1685445548997
+created: 1685445548997
+url: "{{keycloak_url}}/admin/realms/{{realm}}/attack-detection/brute-force/user\
+  s/{{userId}}"
+name: Brute force specific user [SAT] Copy
+description: |-
+  Get status of a username in brute force detection. 
+  * Add userId
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548997
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

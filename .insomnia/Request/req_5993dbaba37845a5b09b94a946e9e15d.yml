@@ -1,0 +1,43 @@
+_id: req_5993dbaba37845a5b09b94a946e9e15d
+type: Request
+parentId: wrk_ce8807821c144eee8b5adc8f5a7b5a42
+modified: 1693497944637
+created: 1687222594178
+url: https://qa-api-acuerdo.acuerdosencillo.com/api/document/1516/updateEmail
+name: New Request
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    [
+
+    {
+        "id": 2475,
+        "documentId": 1516,
+        "deleteme": false,
+        "email": "ncaruso@asap-consulting.net",
+        "name": "VIEWER",
+        "state": "VIEWER",
+        "firstname": "VIEWER",
+        "lastname": "VIEWER",
+        "weight": 0,
+        "typeSignatory": "VIEWER"
+    }
+
+    ]
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIya2ZGUUQ0Y2dQSzFjLWdxMXFFT0pPUVJqOVZrVTdwX3VfcEF1dEV6X2tVIn0.eyJleHAiOjE2OTM0OTk3MjksImlhdCI6MTY5MzQ5NzkyOSwianRpIjoiNjhhZWVjZTItODMxYi00MmJhLThkOWUtZDA0OTdkZDljZWNlIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmFzYXBzd2ZhY3RvcnkuYXIvcmVhbG1zL0FDVUVSRE9fU0VOQ0lMTE9fUUEiLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiMDRkOTJiY2EtMGE2ZC00YjA3LTlmNmUtYzhlZDM1ZmE3YWY4IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYWNfYmFja2VuZCIsInNlc3Npb25fc3RhdGUiOiI0YWU0YWViNS05ZDA4LTRmZWQtYTEyOC01NzlhNTYzZTYwZWEiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkFETUlOSVNUUkFET1IiLCJkZWZhdWx0LXJvbGVzLWFjdWVyZG9fc2VuY2lsbG9fcWEiLCJFTVBSRVNBUyIsInJlYWwtYWRtaW4iLCJvZmZsaW5lX2FjY2VzcyIsIlVTVUFSSU9TIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctcmVhbG0iLCJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsIm1hbmFnZS1pZGVudGl0eS1wcm92aWRlcnMiLCJpbXBlcnNvbmF0aW9uIiwicmVhbG0tYWRtaW4iLCJjcmVhdGUtY2xpZW50IiwibWFuYWdlLXVzZXJzIiwicXVlcnktcmVhbG1zIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsInZpZXctY2xpZW50cyIsIm1hbmFnZS1hdXRob3JpemF0aW9uIiwibWFuYWdlLWNsaWVudHMiLCJxdWVyeS1ncm91cHMiXX0sImJyb2tlciI6eyJyb2xlcyI6WyJyZWFkLXRva2VuIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1hcHBsaWNhdGlvbnMiLCJ2aWV3LWNvbnNlbnQiLCJ2aWV3LWdyb3VwcyIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwiZGVsZXRlLWFjY291bnQiLCJtYW5hZ2UtY29uc2VudCIsInZpZXctcHJvZmlsZSJdfSwiYWNfYmFja2VuZCI6eyJyb2xlcyI6WyJhYy1iYWNrZW5kLXVzZXIiLCJhYy1iYWNrZW5kLWFkbWluIl19fSwic2NvcGUiOiJvcGVuaWQgc291cmNlLWlwbSBlbWFpbCBwcm9maWxlIiwic2lkIjoiNGFlNGFlYjUtOWQwOC00ZmVkLWExMjgtNTc5YTU2M2U2MGVhIiwidXBuIjoidG9iaWFzQHRvYmlhcy5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IkdvcmlsYSBlbiBTa2F0ZSIsInByZWZlcnJlZF91c2VybmFtZSI6InRvYmlhc0B0b2JpYXMuY29tIiwibG9jYWxlIjoiZW4iLCJnaXZlbl9uYW1lIjoiR29yaWxhIiwiZmFtaWx5X25hbWUiOiJlbiBTa2F0ZSIsImVtYWlsIjoidG9iaWFzQHRvYmlhcy5jb20ifQ.cMBLhkEBGvrFYWYPTYYOYCwBbL4xk8tZr_asddkqu8j_ZC-59ASiU2rb-6YLFzmENB8RweX57DhwHRvcBwTc6B_K9yoi66MK_r6ZPg1uMb-VwLzcrRTTFN6171J9Q7JUo1e-QWWirElj0HdFXeoNmuuxP71awUOSkHD5FOOARU7KQrPiUQjMsqyaLlIRCycXJWlSSoZDhc-dP7FI3L_h0gRBbfQBIEXT8jva7icraknM-l06wBo1_9_F5iQMncEIH7tlHnc_985yLIhxxlqEAcHQmIuYtULKqQYbVlq30TSkT9u5FSt6RtOyvgfdE9wuySqbFnR5_1-ZdB6Spd0cHQ
+metaSortKey: -1687222594178
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

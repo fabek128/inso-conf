@@ -1,0 +1,39 @@
+_id: req_638920e39dd74137a90ef34f3d38ce0d
+type: Request
+parentId: fld_68e33fe107e14a12876e166f5da84655
+modified: 1685445549000
+created: 1685445549000
+url: "{{keycloak_url}}/admin/realms/{{realm}}/users/{{userId}}/role-mappings/cl\
+  ients/{{clientId}}"
+name: Add client-level roles to the user role mapping - without group [SAT]
+description: Add client-level roles to the user role mapping
+method: POST
+body:
+  mimeType: application/json
+  text: |
+    [ 
+    	{
+            "id": "647ba3cc-5d4d-4a5a-a67f-ed594f43a5b6",
+            "name": "Sneaky",
+            "composite": false,
+            "clientRole": true,
+            "containerId": "5725d549-faac-4a30-bab3-7b8370c19ce3"
+        }
+    ]
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549000
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,28 @@
+_id: req_3d96d72169764e20950f008e98bbf07c
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548991
+created: 1685445548991
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/required-actions/{\
+  {aliasRequiredAction}}/lower-priority"
+name: Lower required action’s priority [SAT]
+description: Lower required action’s priority
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548991
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

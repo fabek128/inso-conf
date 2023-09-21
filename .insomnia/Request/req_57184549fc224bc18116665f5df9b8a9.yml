@@ -1,0 +1,30 @@
+_id: req_57184549fc224bc18116665f5df9b8a9
+type: Request
+parentId: fld_a329e47ce7af424698ae99efabad9eb4
+modified: 1685445549075
+created: 1685445549075
+url: "{{keycloak_url}}/admin/realms/{{realm}}/users/{{userId}}/credentials/{{cr\
+  edentialsId}}/userLabel"
+name: Update a credential label for a user [SAT]
+description: Update a credential label for a user
+method: PUT
+body:
+  mimeType: text/plain
+  text: '"label"'
+parameters: []
+headers:
+  - name: Content-Type
+    value: text/plain
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549075
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

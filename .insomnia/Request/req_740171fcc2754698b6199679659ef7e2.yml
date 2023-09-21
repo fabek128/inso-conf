@@ -1,0 +1,32 @@
+_id: req_740171fcc2754698b6199679659ef7e2
+type: Request
+parentId: fld_94f8b8f4e7274690b0a1595e11546e94
+modified: 1685445549043
+created: 1685445549043
+url: "{{keycloak_url}}/admin/realms/{{realm}}/logout-all"
+name: "Logout all users from session [SAT] "
+description: >+
+  Any client that has an admin url will also be told to invalidate any sessions
+  they have.
+
+
+
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549043
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

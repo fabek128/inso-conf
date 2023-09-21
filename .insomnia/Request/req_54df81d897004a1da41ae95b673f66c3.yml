@@ -1,0 +1,28 @@
+_id: req_54df81d897004a1da41ae95b673f66c3
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549014
+created: 1685445549014
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/registration\
+  -access-token"
+name: "Generate a new registration access token for the client [SAT] "
+description: Generate a new registration access token for the client
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549014
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

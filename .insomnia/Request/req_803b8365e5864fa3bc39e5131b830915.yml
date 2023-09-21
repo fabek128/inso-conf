@@ -1,0 +1,28 @@
+_id: req_803b8365e5864fa3bc39e5131b830915
+type: Request
+parentId: fld_9597d1b16b0e4fa491042b9ba2172ad2
+modified: 1685445549033
+created: 1685445549033
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/protocol-map\
+  pers/models"
+name: "Get mappers for a client [SAT] "
+description: Get mappers for a client
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549033
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

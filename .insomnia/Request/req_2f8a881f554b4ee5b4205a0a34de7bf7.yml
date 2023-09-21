@@ -1,0 +1,27 @@
+_id: req_2f8a881f554b4ee5b4205a0a34de7bf7
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548980
+created: 1685445548980
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/form-providers"
+name: Form authenticator providers [SAT]
+description: Get form providers Returns a list of form providers.
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548980
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

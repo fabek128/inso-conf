@@ -1,0 +1,42 @@
+_id: req_b6ab866e35314e2294619cb8a497d0dc
+type: Request
+parentId: fld_bc137594af0a49a19af2e3fdac16ed35
+modified: 1685445549025
+created: 1685445549025
+url: "{{keycloak_url}}/admin/realms/{{realm}}/identity-provider/instances"
+name: "Create a new identity provider [SAT] "
+description: Create a new identity provider
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+            "alias": "keycloak-oidc-2",
+            "providerId": "keycloak-oidc",
+            "enabled": true,
+            "updateProfileFirstLoginMode": "on",
+            "trustEmail": false,
+            "storeToken": false,
+            "addReadTokenRoleOnCreate": false,
+            "authenticateByDefault": false,
+            "linkOnly": false,
+            "firstBrokerLoginFlowAlias": "first broker login",
+            "config": {}
+        }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549025
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

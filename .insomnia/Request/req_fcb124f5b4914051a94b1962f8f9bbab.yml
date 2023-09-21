@@ -1,0 +1,28 @@
+_id: req_fcb124f5b4914051a94b1962f8f9bbab
+type: Request
+parentId: fld_94f8b8f4e7274690b0a1595e11546e94
+modified: 1685445549037
+created: 1685445549037
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clear-user-cache"
+name: "Clear user cache [SAT] "
+description: |
+  Clear user cache
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549037
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

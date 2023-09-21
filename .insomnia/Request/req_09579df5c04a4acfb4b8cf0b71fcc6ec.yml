@@ -1,0 +1,32 @@
+_id: req_09579df5c04a4acfb4b8cf0b71fcc6ec
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549010
+created: 1685445549010
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/evaluate-sco\
+  pes/scope-mappings/{{containerId}}/not-granted"
+name: Get roles without scope and access token [SAT]
+description: Get roles, which this client doesn’t have scope for and can’t have
+  them in the accessToken issued for him.
+method: GET
+body: {}
+parameters:
+  - name: scope
+    value: ""
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549010
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,34 @@
+_id: req_ba28ee336ba3426aa06278cf7732f44f
+type: Request
+parentId: fld_bc137594af0a49a19af2e3fdac16ed35
+modified: 1685445549026
+created: 1685445549026
+url: "{{keycloak_url}}/admin/realms/{{realm}}/identity-provider/instances/{{pro\
+  viderAlias}}/management/permissions"
+name: Return object stating client Authorization [SAT]  Copy
+description: Return object stating whether client Authorization permissions have
+  been initialized or not and a reference
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"enabled": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549026
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

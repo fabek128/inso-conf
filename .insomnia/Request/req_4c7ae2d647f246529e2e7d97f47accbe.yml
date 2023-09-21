@@ -1,0 +1,28 @@
+_id: req_4c7ae2d647f246529e2e7d97f47accbe
+type: Request
+parentId: fld_bc137594af0a49a19af2e3fdac16ed35
+modified: 1685445549030
+created: 1685445549030
+url: "{{keycloak_url}}/admin/realms/{{realm}}/identity-provider/instances/{{pro\
+  viderAlias}}/mappers/ea65c956-24c7-4587-8fe7-c07222e3485d"
+name: Delete a mapper for the identity provider  [SAT]
+description: Delete a mapper for the identity provider
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549030
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

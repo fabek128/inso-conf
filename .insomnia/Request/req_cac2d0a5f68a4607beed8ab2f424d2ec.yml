@@ -1,0 +1,38 @@
+_id: req_cac2d0a5f68a4607beed8ab2f424d2ec
+type: Request
+parentId: fld_721d210e2601438a8e6c7dce6d4a8b62
+modified: 1685445549065
+created: 1685445549065
+url: "{{keycloak_url}}/admin/realms/{{realm}}/client-scopes/{{realmClientScopeI\
+  d}}/scope-mappings/realm"
+name: "Get realm-level roles associated with the client’s scope [SAT] "
+description: Get realm-level roles associated with the client’s scope
+method: DELETE
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "id": "ea522e2b-1e8f-42f6-9cc6-981fd5dd2114",
+        "name": "Investigator",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "heroes",
+        "attributes": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549065
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

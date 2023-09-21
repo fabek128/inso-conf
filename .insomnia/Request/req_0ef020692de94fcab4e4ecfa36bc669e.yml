@@ -1,0 +1,31 @@
+_id: req_0ef020692de94fcab4e4ecfa36bc669e
+type: Request
+parentId: fld_94f8b8f4e7274690b0a1595e11546e94
+modified: 1685445549041
+created: 1685445549041
+url: "{{keycloak_url}}/admin/realms/{{realm}}/default-optional-client-scopes/{{\
+  realmClientScopeId}}"
+name: "Delete realm optional client scopes [SAT] "
+description: |+
+  Delete realm optional client scopes
+
+
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549041
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

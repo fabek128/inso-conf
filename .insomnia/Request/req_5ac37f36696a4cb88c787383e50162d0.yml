@@ -1,0 +1,34 @@
+_id: req_5ac37f36696a4cb88c787383e50162d0
+type: Request
+parentId: fld_897131f0b56a4245921620678a6385ab
+modified: 1685445549024
+created: 1685445549024
+url: "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{groupId}}/management/per\
+  missions"
+name: "Update return object authorization permissions [SAT] "
+description: Return object stating whether client Authorization permissions have
+  been initialized or not and a reference
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"enabled": "false"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549024
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

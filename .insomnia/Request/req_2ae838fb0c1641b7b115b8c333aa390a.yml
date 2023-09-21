@@ -1,0 +1,28 @@
+_id: req_2ae838fb0c1641b7b115b8c333aa390a
+type: Request
+parentId: fld_bc137594af0a49a19af2e3fdac16ed35
+modified: 1685445549027
+created: 1685445549027
+url: "{{keycloak_url}}/admin/realms/{{realm}}/identity-provider/instances/{{pro\
+  viderAlias}}/mapper-types"
+name: "Get mapper types for identity provider [SAT] "
+description: Get mapper types for identity provider
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/octet-stream
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549027
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

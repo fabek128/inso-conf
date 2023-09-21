@@ -1,0 +1,29 @@
+_id: req_795a30b3047642be8da3dbb7141b6c8c
+type: Request
+parentId: fld_721d210e2601438a8e6c7dce6d4a8b62
+modified: 1685445549067
+created: 1685445549067
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/scope-mappin\
+  gs/clients/{{clientId}}/available"
+name: "Get available client-level roles to the client’s scope  [SAT] "
+description: The available client-level roles Returns the roles for the client
+  that can be associated with the client’s scope
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549067
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

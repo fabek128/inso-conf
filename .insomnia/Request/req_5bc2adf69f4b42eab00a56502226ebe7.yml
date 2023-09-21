@@ -1,0 +1,27 @@
+_id: req_5bc2adf69f4b42eab00a56502226ebe7
+type: Request
+parentId: fld_5ee4da04bb7944a5baa13af123ca1190
+modified: 1685445549018
+created: 1685445549018
+url: "{{keycloak_url}}/admin/realms/{{realm}}/components/{{componentId}}"
+name: Update a specific component [SAT] Copy
+description: Update a component from id
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549018
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

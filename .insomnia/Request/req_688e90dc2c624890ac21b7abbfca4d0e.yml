@@ -1,0 +1,38 @@
+_id: req_688e90dc2c624890ac21b7abbfca4d0e
+type: Request
+parentId: fld_ef927c241dbc4a649d757df8222af3d7
+modified: 1685445549003
+created: 1685445549003
+url: "{{keycloak_url}}/admin/realms/{{realm}}/client-scopes"
+name: Create a new client scope [SAT]
+description: Create a new client scope Client Scope’s name must be unique!
+method: POST
+body:
+  mimeType: application/json
+  text: |-2
+        {
+            "name": "test_scope",
+            "description": "OpenID Connect built-in scope: offline_access",
+            "protocol": "openid-connect",
+            "attributes": {
+                "consent.screen.text": "${offlineAccessScopeConsentText}",
+                "display.on.consent.screen": "true"
+            }
+        }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549003
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

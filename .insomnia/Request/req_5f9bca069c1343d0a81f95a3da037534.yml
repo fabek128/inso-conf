@@ -1,0 +1,28 @@
+_id: req_5f9bca069c1343d0a81f95a3da037534
+type: Request
+parentId: fld_9597d1b16b0e4fa491042b9ba2172ad2
+modified: 1685445549033
+created: 1685445549033
+url: "{{keycloak_url}}/admin/realms/{{realm}}/client-scopes/{{clientScopeId}}/p\
+  rotocol-mappers/models/62224d4c-7181-4790-a3c9-71cdbf1516a5"
+name: "Get exact mapper [SAT] "
+description: Get specific mapper
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549033
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

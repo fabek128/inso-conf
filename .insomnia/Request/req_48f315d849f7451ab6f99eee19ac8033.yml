@@ -1,0 +1,35 @@
+_id: req_48f315d849f7451ab6f99eee19ac8033
+type: Request
+parentId: fld_897131f0b56a4245921620678a6385ab
+modified: 1685445549021
+created: 1685445549021
+url: "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{groupId}}"
+name: Update group [SAT]
+description: Update group, ignores subgroups.
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+            "id": "67722639-5e88-4635-b641-522c2461fef3",
+            "name": "marvel",
+            "path": "/marVel",
+            "subGroups": []
+        }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549021
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

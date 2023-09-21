@@ -1,0 +1,28 @@
+_id: req_95757cd4713147cab840294e426e0570
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548982
+created: 1685445548982
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/config/{{configura\
+  tionId}}"
+name: Authenticator configuration [SAT]
+description: Get authenticator configuration
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548982
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

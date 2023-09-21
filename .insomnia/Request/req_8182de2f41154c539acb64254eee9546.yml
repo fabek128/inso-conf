@@ -1,0 +1,27 @@
+_id: req_8182de2f41154c539acb64254eee9546
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549005
+created: 1685445549005
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/client-secret"
+name: Get secret for the client [SAT]
+description: Get the client secret
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549005
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

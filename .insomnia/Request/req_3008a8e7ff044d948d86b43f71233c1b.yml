@@ -1,0 +1,28 @@
+_id: req_3008a8e7ff044d948d86b43f71233c1b
+type: Request
+parentId: fld_897131f0b56a4245921620678a6385ab
+modified: 1685445549021
+created: 1685445549021
+url: "{{keycloak_url}}/admin/realms/{{realm}}/groups/91f732ae-509f-4520-a246-ab\
+  e570f9b52d"
+name: Delete group [SAT]
+description: Delete group
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549021
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

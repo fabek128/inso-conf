@@ -1,0 +1,39 @@
+_id: req_25bfde6b8f414b4f87f30e6aec35a198
+type: Request
+parentId: fld_76fc1cc9855f4297ad629efd051ba59f
+modified: 1685445549050
+created: 1685445549050
+url: "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{groupId}}/role-mappings/\
+  realm"
+name: "Delete realm-level role mappings  [SAT] "
+description: |+
+  Delete realm-level role mappings
+
+method: DELETE
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"attributes": {},
+    	"clientRole": false,
+    	"composite": false,
+    	"description": "added role mapping from rest api",
+    	"name": "investigator"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549050
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

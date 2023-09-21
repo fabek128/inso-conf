@@ -1,0 +1,32 @@
+_id: req_bb6d96f5fbe44d15ad73cb8462a23bd0
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549011
+created: 1685445549011
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/offline-sess\
+  ion-count"
+name: Get application offline session count [SAT]
+description: 'Get application offline session count Returns a number of offline
+  user sessions associated with this client { "count": number }'
+method: GET
+body: {}
+parameters:
+  - name: scope
+    value: ""
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549011
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

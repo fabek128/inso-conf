@@ -1,0 +1,50 @@
+_id: req_ff56ad72d15b4ea29bacb7964862bed4
+type: Request
+parentId: fld_a329e47ce7af424698ae99efabad9eb4
+modified: 1685445549070
+created: 1685445549070
+url: "{{keycloak_url}}/admin/realms/{{realm}}/users"
+name: create user
+description: Create a new user Username must be unique.
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+            "createdTimestamp": 1588880747548,
+            "username": "Strange",
+            "enabled": true,
+            "totp": false,
+            "emailVerified": true,
+            "firstName": "Stephen",
+            "lastName": "Strange",
+            "email": "drstranger@marvel.com",
+            "disableableCredentialTypes": [],
+            "requiredActions": [],
+            "notBefore": 0,
+            "access": {
+                "manageGroupMembership": true,
+                "view": true,
+                "mapRoles": true,
+                "impersonate": true,
+                "manage": true
+            },
+            "realmRoles": [	"mb-user" ]
+        }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJINEtna0tjbU1TeFlYUG5iWk9mZURSQW1GamZWeENrb25xSGg3dWk5cDVBIn0.eyJleHAiOjE2NTMyMTc2NzAsImlhdCI6MTY1MzIxNzM3MCwianRpIjoiZDRmZDZlZTktZmI4Ny00YzJiLTgyZjUtZTFiNWI4ZWViZWJlIiwiaXNzIjoiaHR0cHM6Ly9pYW0uc2h1cmpvbXVraGkuY29tLmJkL2F1dGgvcmVhbG1zL3ByYW5pU2hlYmEtU2hvcCIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYWNjb3VudCJdLCJzdWIiOiIxMmY3MTMwYS00MTMwLTQ5NjktYjViMy0zY2JlNjI2MzMxNmMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJyZXN0X2NsaWVudCIsInNlc3Npb25fc3RhdGUiOiJlMTRhMDlkMy0zZjAzLTQ0YWUtYTVjNi0zM2UxN2VhMWQyNDEiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1wcmFuaXNoZWJhLXNob3AiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJ2aWV3LXJlYWxtIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJyZWFsbS1hZG1pbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiZTE0YTA5ZDMtM2YwMy00NGFlLWE1YzYtMzNlMTdlYTFkMjQxIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoidGVzdCB0ZXN0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdCIsImdpdmVuX25hbWUiOiJ0ZXN0IiwiZmFtaWx5X25hbWUiOiJ0ZXN0IiwiZW1haWwiOiJheXNoaWtAZ21haWwuY29tIn0.T3ZJIl3L5IIfx1Jz34vYOd9V_oGYAl_3moW_bgAXDyJ5iqSr2Z1aw7uNhJ__lCITwYd7K0Oh_Y85lGGmzuVL1pKCTKL7oH1iMwrcYQ7JwoVV6qYTWj9iHCXh0kmEtUBU3Mqafg3I-GfH0lj1zZovUBNYtxWRmjoM5xsbUQeYYyNeYUD1n-gR4iKc882VQwCxbZA9QThhXlHwyjHykTNIPGvHOKFaIfiwBcwL0wb0eLJC4Zjp9yvTGokGoKLClFg8VA3KNgwYcbVvEmXjNcttkbYfWuCKGYWMNEsV0SbVISEn6eZJWEq8yDiNXnFRaLEECN-sr-ZLyc2oD6ZL4ura4g
+  prefix: ""
+metaSortKey: -1685445549070
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

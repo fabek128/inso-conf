@@ -1,0 +1,27 @@
+_id: req_5e84d5a0f4f54ba68299b69367b6c43f
+type: Request
+parentId: fld_3820ee02d7c049c093439b62c426dc67
+modified: 1685445549060
+created: 1685445549060
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles-by-id/{{roleId}}"
+name: "Get a specific role’s representation [SAT] "
+description: Get a specific role’s representation
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549060
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

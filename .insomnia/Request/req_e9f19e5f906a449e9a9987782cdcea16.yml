@@ -1,0 +1,28 @@
+_id: req_e9f19e5f906a449e9a9987782cdcea16
+type: Request
+parentId: fld_20b52bb3e7854b6894067c2295fe23a5
+modified: 1685445549055
+created: 1685445549055
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/roles/Sneaky\
+  /composites/realm"
+name: "Get realm-level roles of the role’s composite [SAT] "
+description: Get realm-level roles of the role’s composite
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549055
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,28 @@
+_id: req_1889249ccbce4c0ca26e6ba819274ed1
+type: Request
+parentId: fld_bc137594af0a49a19af2e3fdac16ed35
+modified: 1685445549029
+created: 1685445549029
+url: "{{keycloak_url}}/admin/realms/{{realm}}/identity-provider/instances/{{pro\
+  viderAlias}}/mappers/ea65c956-24c7-4587-8fe7-c07222e3485d"
+name: "Get mapper by id for the identity provider  [SAT] "
+description: Get mapper by id for the identity provider
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549029
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

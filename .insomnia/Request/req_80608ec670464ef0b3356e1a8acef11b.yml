@@ -1,0 +1,50 @@
+_id: req_80608ec670464ef0b3356e1a8acef11b
+type: Request
+parentId: fld_72de30e05b44446897c872cc64110998
+modified: 1689433392584
+created: 1689016384196
+url: localhost:8080/api/plans/1
+name: crear un plan
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "TEST DE PLANES do",
+      "description": "PLAN TESTS",
+      "pricePerMonth": 5,
+      "pricePerYear": 1100,
+      "startDate": "2023-07-10T19:39:23.161Z",
+      "endDate": "2023-12-10T19:39:23.161Z",
+      "active": true,
+    	"features": [
+        {
+          "name": "Documentos",
+          "usageLimit": 1,
+          "description": "string",
+          "active": true
+        },
+    		 {
+          "name": "Firmas",
+          "usageLimit": 1,
+          "description": "string",
+          "active": true
+        }
+      ]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIya2ZGUUQ0Y2dQSzFjLWdxMXFFT0pPUVJqOVZrVTdwX3VfcEF1dEV6X2tVIn0.eyJleHAiOjE2ODkxMDY3MTksImlhdCI6MTY4OTEwNDkxOSwianRpIjoiNjlmMDk0NDYtZDY2ZS00ODg4LWJiYjEtYzM4NGI4MjZjMjU0IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmFzYXBzd2ZhY3RvcnkuYXIvcmVhbG1zL0FDVUVSRE9fU0VOQ0lMTE9fUUEiLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiMDRkOTJiY2EtMGE2ZC00YjA3LTlmNmUtYzhlZDM1ZmE3YWY4IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYWNfYmFja2VuZCIsInNlc3Npb25fc3RhdGUiOiI5NmZhMGIwZS0zZWRiLTRjMGUtOTE5Mi0yNTE4ZDA3YmVkZGYiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtYWN1ZXJkb19zZW5jaWxsb19xYSIsIkVNUFJFU0FTIiwicmVhbC1hZG1pbiIsIm9mZmxpbmVfYWNjZXNzIiwiVVNVQVJJT1MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1yZWFsbSIsInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJyZWFsbS1hZG1pbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJkZWxldGUtYWNjb3VudCIsIm1hbmFnZS1jb25zZW50Iiwidmlldy1wcm9maWxlIl19LCJhY19iYWNrZW5kIjp7InJvbGVzIjpbImFjLWJhY2tlbmQtdXNlciIsImFjLWJhY2tlbmQtYWRtaW4iXX19LCJzY29wZSI6Im9wZW5pZCBzb3VyY2UtaXBtIGVtYWlsIHByb2ZpbGUiLCJzaWQiOiI5NmZhMGIwZS0zZWRiLTRjMGUtOTE5Mi0yNTE4ZDA3YmVkZGYiLCJ1cG4iOiJ0b2JpYXNAdG9iaWFzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiUGFuIERvbGZvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidG9iaWFzQHRvYmlhcy5jb20iLCJsb2NhbGUiOiJlbiIsImdpdmVuX25hbWUiOiJQYW4iLCJmYW1pbHlfbmFtZSI6IkRvbGZvIiwiZW1haWwiOiJ0b2JpYXNAdG9iaWFzLmNvbSJ9.Ot3r9SKD49-YGIPzs5aMIELsPTTrDgNknHH0ALlVyYo-m95jpcLVDiP6r-dHB8rJP-sjOG3HCfng5r3HzXQSBJu4sLwlaBMN4WhUmkI-6kzkBwIn8-00UyXzrV2jj7Ed71rrpwwQd4SELOLGS3e_9ZzKFAJAbn-aN4c-pjBjFP84EObiWkdtnpOaSWeR7TDOWskvPqeluQL1j5X05bvVY23EiZNu7UQeI24iM1Xyx_O_F4RPXLU32SXFSXMqxLoi2i_oNEu9vsYUQ6VUaM7KpoCyZ7RpA6iV_-MgBlUpm4CbDKrfzkhstYelLDJ5CcYwfkDpvOxOr-JDRTKwGBEOjA
+metaSortKey: -1688495232026.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

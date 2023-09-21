@@ -1,0 +1,40 @@
+_id: req_c19aac5fabe04142ae4f2b0965eb6f33
+type: Request
+parentId: fld_76fc1cc9855f4297ad629efd051ba59f
+modified: 1685445549050
+created: 1685445549050
+url: "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{groupId}}/role-mappings/\
+  realm"
+name: "Update role mappings [SAT] "
+description: |+
+  Update role mappings
+
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    [{
+    	"attributes": {},
+    	"clientRole": false,
+    	"composite": false,
+    	"description": "added role mapping from rest api",
+    	"name": "Investigator",
+    	"containerId": "heroes"
+    }]
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549050
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,45 @@
+_id: req_f4ee54ca14d9458db1aabde1c95d9fb2
+type: Request
+parentId: fld_9597d1b16b0e4fa491042b9ba2172ad2
+modified: 1685445549031
+created: 1685445549031
+url: "{{keycloak_url}}/admin/realms/{{realm}}/client-scopes/{{clientScopeId}}/p\
+  rotocol-mappers/models/62224d4c-7181-4790-a3c9-71cdbf1516a5"
+name: "Update the mapper[SAT] "
+description: Update the mapper
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+            "id": "62224d4c-7181-4790-a3c9-71cdbf1516a5",
+            "name": "email",
+            "protocol": "openid-connect",
+            "protocolMapper": "oidc-usermodel-property-mapper",
+            "consentRequired": false,
+            "config": {
+                "userinfo.token.claim": "true",
+                "user.attribute": "email",
+                "id.token.claim": "true",
+                "access.token.claim": "true",
+                "claim.name": "email",
+                "jsonType.label": "String"
+            }
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549031
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

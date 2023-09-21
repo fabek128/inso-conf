@@ -1,0 +1,28 @@
+_id: req_b3b260242ac143aeb1635d23385b9abc
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549014
+created: 1685445549014
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/push-revocation"
+name: "Push the client’s revocation policy to its admin URL [SAT] "
+description: Push the client’s revocation policy to its admin URL If the client
+  has an admin URL, push revocation policy to it.
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549014
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

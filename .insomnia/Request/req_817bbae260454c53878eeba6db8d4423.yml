@@ -1,0 +1,28 @@
+_id: req_817bbae260454c53878eeba6db8d4423
+type: Request
+parentId: fld_68e33fe107e14a12876e166f5da84655
+modified: 1685445549000
+created: 1685445549000
+url: "{{keycloak_url}}/admin/realms/{{realm}}/users/{{userId}}/role-mappings/cl\
+  ients/{{clientId}}/composite"
+name: Get effective client-level role mappings  - composite roles [SAT]
+description: Get effective client-level role mappings This recurses any composite roles
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549000
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

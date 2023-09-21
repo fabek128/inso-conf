@@ -1,0 +1,39 @@
+_id: req_0e4b897dbfa740b68ddab07f709b6ad9
+type: Request
+parentId: fld_68e33fe107e14a12876e166f5da84655
+modified: 1685445549000
+created: 1685445549000
+url: "{{keycloak_url}}/admin/realms/{{realm}}/users/{{userId}}/role-mappings/cl\
+  ients/{{clientId}}"
+name: Delete client-level roles from user role mapping [SAT]
+description: Delete client-level roles from user role mapping
+method: DELETE
+body:
+  mimeType: application/json
+  text: |
+    [ 
+    	{
+            "id": "647ba3cc-5d4d-4a5a-a67f-ed594f43a5b6",
+            "name": "Sneaky",
+            "composite": false,
+            "clientRole": true,
+            "containerId": "5725d549-faac-4a30-bab3-7b8370c19ce3"
+        }
+    ]
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549000
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

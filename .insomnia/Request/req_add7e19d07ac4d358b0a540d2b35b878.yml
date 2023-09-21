@@ -1,0 +1,40 @@
+_id: req_add7e19d07ac4d358b0a540d2b35b878
+type: Request
+parentId: fld_a329e47ce7af424698ae99efabad9eb4
+modified: 1686052610565
+created: 1685445549076
+url: "{{keycloakurl}}/admin/realms/{{realmname}}/users/131c7180-7e7a-4dd1-aac5-\
+  c916be24fb93/execute-actions-email"
+name: Send an update account email to the user [SAT]
+description: Send a update account email to the user An email contains a link
+  the user can click to perform a set of required actions.
+method: PUT
+body:
+  mimeType: application/json
+  text: '["VERIFY_EMAIL"]'
+parameters:
+  - name: client_id
+    value: ""
+    disabled: true
+  - name: lifespan
+    value: ""
+    disabled: true
+  - name: redirect_uri
+    value: ""
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549076
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

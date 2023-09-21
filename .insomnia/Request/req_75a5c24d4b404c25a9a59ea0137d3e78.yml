@@ -1,0 +1,32 @@
+_id: req_75a5c24d4b404c25a9a59ea0137d3e78
+type: Request
+parentId: fld_0d4d96d980b441918f4bd15cbdf0fe53
+modified: 1685445549069
+created: 1685445549069
+url: "{{keycloak_url}}/admin/realms/{{realm}}/user-storage/{{ldapParentId}}/map\
+  pers/{{ldapMapperId}}/sync"
+name: "Trigger sync to ldap mapper  [SAT] "
+description: Trigger sync of mapper data related to ldap mapper (roles, groups,
+  …​) direction is "fedToKeycloak" or "keycloakToFed"
+method: POST
+body: {}
+parameters:
+  - name: direction
+    value: ""
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549069
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

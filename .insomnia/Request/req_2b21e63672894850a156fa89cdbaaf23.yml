@@ -1,0 +1,23 @@
+_id: req_2b21e63672894850a156fa89cdbaaf23
+type: Request
+parentId: fld_daf9a9c336af4c43bc926d393537684a
+modified: 1685445549016
+created: 1685445549016
+url: "{{keycloak_url}}/realms/{{realm}}/.well-known/openid-configuration"
+name: Well known configuration
+description: Get configuration information
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+authentication: {}
+metaSortKey: -1685445549016
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

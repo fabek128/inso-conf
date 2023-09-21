@@ -1,0 +1,28 @@
+_id: req_c1c3df4902634b4998e2073f132453fb
+type: Request
+parentId: fld_3820ee02d7c049c093439b62c426dc67
+modified: 1685445549061
+created: 1685445549061
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles-by-id/{{roleId}}/composites\
+  /clients/{{clientId}}"
+name: Get client-level roles for the client that are in the role’s composite [SAT]
+description: Get client-level roles for the client that are in the role’s composite
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549061
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

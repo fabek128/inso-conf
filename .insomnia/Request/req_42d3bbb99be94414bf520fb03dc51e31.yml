@@ -1,0 +1,27 @@
+_id: req_42d3bbb99be94414bf520fb03dc51e31
+type: Request
+parentId: fld_bdfc7e174f994912887bfa738075a840
+modified: 1685445548999
+created: 1685445548999
+url: "{{keycloak_url}}/admin/realms/{{realm}}/client-registration-policy/providers"
+name: Base path for retrieve providers  [SAT]
+description: Base path for retrieve providers with the configProperties properly filled
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548999
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

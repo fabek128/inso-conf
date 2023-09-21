@@ -1,0 +1,31 @@
+_id: req_c612e0f0dffe424d830ea65aba76476c
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549012
+created: 1685445549012
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/optional-cli\
+  ent-scopes"
+name: Get optional client scopes[SAT]
+description: Get optional client scopes.
+method: GET
+body: {}
+parameters:
+  - name: scope
+    value: ""
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549012
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

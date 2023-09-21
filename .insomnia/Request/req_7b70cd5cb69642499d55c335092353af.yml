@@ -1,0 +1,36 @@
+_id: req_7b70cd5cb69642499d55c335092353af
+type: Request
+parentId: fld_76fc1cc9855f4297ad629efd051ba59f
+modified: 1685445549051
+created: 1685445549051
+url: "{{keycloak_url}}/admin/realms/{{realm}}/users/{{userId}}/role-mappings/realm"
+name: "Add realm-level role mappings to the user [SAT] "
+description: Add realm-level role mappings to the user
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    [{
+            "name": "offline_access_2",
+            "description": "${role_offline-access}",
+            "composite": false,
+            "clientRole": false,
+            "containerId": "heroes"
+    }]
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549051
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

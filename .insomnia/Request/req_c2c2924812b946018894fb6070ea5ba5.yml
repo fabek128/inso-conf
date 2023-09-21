@@ -1,0 +1,29 @@
+_id: req_c2c2924812b946018894fb6070ea5ba5
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549008
+created: 1685445549008
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/management/p\
+  ermissions"
+name: Get client authorization permissions [SAT]
+description: |
+  Has client authorization permissions initialized?
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549008
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

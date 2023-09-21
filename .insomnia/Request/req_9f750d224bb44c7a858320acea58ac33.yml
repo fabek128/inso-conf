@@ -1,0 +1,35 @@
+_id: req_9f750d224bb44c7a858320acea58ac33
+type: Request
+parentId: fld_20b52bb3e7854b6894067c2295fe23a5
+modified: 1685445549053
+created: 1685445549053
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/roles"
+name: "Create a new role for the realm or client [SAT] "
+description: Create a new role for the realm or client
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+            "name": "Strong",
+            "composite": false,
+            "clientRole": true,
+            "containerId": "5725d549-faac-4a30-bab3-7b8370c19ce3"
+        }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549053
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

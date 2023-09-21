@@ -1,0 +1,44 @@
+_id: req_5f4a658ed27c4349a378b338340b76dc
+type: Request
+parentId: fld_bc137594af0a49a19af2e3fdac16ed35
+modified: 1685445549027
+created: 1685445549027
+url: "{{keycloak_url}}/admin/realms/{{realm}}/identity-provider/instances/{{pro\
+  viderAlias}}"
+name: "Update the identity provider [SAT] "
+description: Update the identity provider
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "alias": "keycloak-oidc-2",
+        "internalId": "0df24d90-d39e-4e02-ab3d-7150efa40b1d",
+        "providerId": "keycloak-oidc",
+        "enabled": true,
+        "updateProfileFirstLoginMode": "on",
+        "trustEmail": true,
+        "storeToken": false,
+        "addReadTokenRoleOnCreate": false,
+        "authenticateByDefault": false,
+        "linkOnly": false,
+        "firstBrokerLoginFlowAlias": "first broker login",
+        "config": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549027
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

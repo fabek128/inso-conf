@@ -1,0 +1,28 @@
+_id: req_9de7e87e27524178b85d3975e9e4c374
+type: Request
+parentId: fld_72b3f7f3caaa47a0b3f3b06c18a2c8f7
+modified: 1685445548998
+created: 1685445548998
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/certificates\
+  /{{attr}}/generate"
+name: Generate a new certificate with new key pair [SAT]
+description: Generate a new certificate with new key pair
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548998
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

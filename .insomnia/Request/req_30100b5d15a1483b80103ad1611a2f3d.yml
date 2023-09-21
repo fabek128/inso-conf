@@ -1,0 +1,36 @@
+_id: req_30100b5d15a1483b80103ad1611a2f3d
+type: Request
+parentId: fld_897131f0b56a4245921620678a6385ab
+modified: 1685445549022
+created: 1685445549022
+url: "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{groupId}}/management/per\
+  missions"
+name: "Return object authorization permissions [SAT] "
+description: Return object stating whether client Authorization permissions have
+  been initialized or not and a reference
+method: GET
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "movies",
+    	"path": "/movies",
+    	"subGroups": []
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549022
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

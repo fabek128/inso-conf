@@ -1,0 +1,37 @@
+_id: req_964eddc29c5e43958dca875336b91f4b
+type: Request
+parentId: fld_3820ee02d7c049c093439b62c426dc67
+modified: 1685445549060
+created: 1685445549060
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles-by-id/{{roleId}}"
+name: Update a specific role’s representation [SAT]  Copy
+description: Update a specific role’s representation
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "id": "ea522e2b-1e8f-42f6-9cc6-981fd5dd2114",
+        "name": "Investigator",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "heroes",
+        "attributes": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549060
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,34 @@
+_id: req_fa45a8f58add44c497eed137c1e4ca4d
+type: Request
+parentId: fld_3820ee02d7c049c093439b62c426dc67
+modified: 1685445549062
+created: 1685445549062
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles-by-id/{{roleId}}/management\
+  /permissions"
+name: Get role Authoirzation permissions  [SAT] Copy
+description: Return object stating whether role Authoirzation permissions have
+  been initialized or not and a reference
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "enabled": false
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549062
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

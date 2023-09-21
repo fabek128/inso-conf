@@ -1,0 +1,28 @@
+_id: req_431fc01a24a54ee3b17900a4551ab161
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549013
+created: 1685445549013
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/default-clie\
+  nt-scopes/{{clientScopeId}}"
+name: Add default client scope to client [SAT]
+description: Add default client scope to client
+method: PUT
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549013
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

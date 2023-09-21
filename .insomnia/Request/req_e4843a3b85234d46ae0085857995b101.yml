@@ -1,0 +1,29 @@
+_id: req_e4843a3b85234d46ae0085857995b101
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549015
+created: 1685445549015
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientIdServiceAccount}\
+  }/test-nodes-available"
+name: "Test if registered cluster nodes are available [SAT] "
+description: Test if registered cluster nodes are available Tests availability
+  by sending 'ping' request to all cluster nodes
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549015
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

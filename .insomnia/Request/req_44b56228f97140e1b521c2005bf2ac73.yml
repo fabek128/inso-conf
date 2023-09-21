@@ -1,0 +1,26 @@
+_id: req_44b56228f97140e1b521c2005bf2ac73
+type: Request
+parentId: fld_08f5752cac474971ba98e34da0cfb225
+modified: 1685445548996
+created: 1685445548996
+url: "{{keycloak_url}}/admin/realms/{{realm}}/attack-detection/brute-force/users"
+name: Brute force users [SAT]
+description: Clear any user login failures for all users This can release
+  temporary disabled users
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548996
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

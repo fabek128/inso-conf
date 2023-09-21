@@ -1,0 +1,44 @@
+_id: req_00b01776c6244a4fa6abc6a221bb989c
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548987
+created: 1685445548987
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/flows/{{LowerCaseA\
+  liasFlow}}/executions"
+name: Update authentication executions of a flow [SAT]
+description: Update authentication executions of a flow
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    	{
+            "id": "23e192b0-2811-4441-9f66-99bd1c4687f6",
+            "requirement": "ALTERNATIVE",
+            "displayName": "Cookie",
+            "requirementChoices": [
+                "REQUIRED",
+                "ALTERNATIVE",
+                "DISABLED"
+            ],
+            "configurable": false,
+            "providerId": "auth-cookie",
+            "level": 0,
+            "index": 0
+        }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548987
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

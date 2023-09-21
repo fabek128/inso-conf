@@ -1,0 +1,32 @@
+_id: req_3f587fe4d4704f84ba20cb689c82dce4
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549009
+created: 1685445549009
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}"
+name: Create a new client [SAT] Copy
+description: Create a new client Client’s client_id must be unique!
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "enabled": false
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549009
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

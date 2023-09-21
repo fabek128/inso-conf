@@ -1,0 +1,36 @@
+_id: req_9e5d523090c94d3dac0c66355d4ff1f8
+type: Request
+parentId: fld_bc137594af0a49a19af2e3fdac16ed35
+modified: 1685445549028
+created: 1685445549028
+url: "{{keycloak_url}}/admin/realms/{{realm}}/identity-provider/instances/{{pro\
+  viderAlias}}/mappers"
+name: "Add a mapper to identity provider [SAT] "
+description: Add a mapper to identity provider
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "test-mapper",
+    	"identityProviderAlias": "keycloak-oidc2",
+    	"identityProviderMapper": "keycloak-oidc",
+    	"config": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549028
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,37 @@
+_id: req_94c1ac0df1844b28823a56e2611693bd
+type: Request
+parentId: fld_20b52bb3e7854b6894067c2295fe23a5
+modified: 1685445549058
+created: 1685445549058
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles/{{roleName}}"
+name: "Update a role by name[SAT] "
+description: Update a role by name
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "id": "ea522e2b-1e8f-42f6-9cc6-981fd5dd2114",
+        "name": "Investigator",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "heroes",
+        "attributes": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549058
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

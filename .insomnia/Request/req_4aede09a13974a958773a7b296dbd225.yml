@@ -1,0 +1,32 @@
+_id: req_4aede09a13974a958773a7b296dbd225
+type: Request
+parentId: fld_5ee4da04bb7944a5baa13af123ca1190
+modified: 1685445549018
+created: 1685445549018
+url: "{{keycloak_url}}/admin/realms/{{realm}}/components/{{componentId}}/sub-co\
+  mponent-types"
+name: Get subcomponents [SAT]
+description: List of subcomponent types that are available to configure for a
+  particular parent component.
+method: GET
+body: {}
+parameters:
+  - name: type
+    value: org.keycloak.keys.KeyProvider
+    disabled: false
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549018
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,28 @@
+_id: req_3ab2b777361e4eb886db8bfcbc8bda44
+type: Request
+parentId: fld_68e33fe107e14a12876e166f5da84655
+modified: 1685445549001
+created: 1685445549001
+url: "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{groupId}}/role-mappings/\
+  clients/{{clientId}}"
+name: Get client-level role mappings for the user, and the app [SAT]
+description: Get client-level role mappings for the user, and the app
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549001
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

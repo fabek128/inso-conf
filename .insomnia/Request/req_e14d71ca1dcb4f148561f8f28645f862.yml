@@ -1,0 +1,28 @@
+_id: req_e14d71ca1dcb4f148561f8f28645f862
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548984
+created: 1685445548984
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/executions/{{execu\
+  tionId}}/raise-priority"
+name: Raise authentication execution priority [SAT]
+description: Raise execution’s priority
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548984
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

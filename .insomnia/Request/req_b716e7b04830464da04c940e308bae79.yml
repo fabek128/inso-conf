@@ -1,0 +1,32 @@
+_id: req_b716e7b04830464da04c940e308bae79
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549011
+created: 1685445549011
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/evaluate-sco\
+  pes/protocol-mappers"
+name: Get all protocol mappers [SAT]
+description: Return list of all protocol mappers, which will be used when
+  generating tokens issued for particular client.
+method: GET
+body: {}
+parameters:
+  - name: scope
+    value: ""
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549011
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

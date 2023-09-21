@@ -1,0 +1,33 @@
+_id: req_c85a27a4f4f2488080dc83b13d66ee81
+type: Request
+parentId: fld_67075bb3ca954f15bad82e688a874d05
+modified: 1685445548998
+created: 1685445548998
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients-initial-access"
+name: Create a new initial access token [SAT]
+description: Create a new initial access token.
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"count": 5,
+    	"expiration": 5
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548998
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

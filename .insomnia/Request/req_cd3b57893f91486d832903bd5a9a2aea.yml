@@ -1,0 +1,27 @@
+_id: req_cd3b57893f91486d832903bd5a9a2aea
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548985
+created: 1685445548985
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/flows"
+name: Get authentication flows [SAT]
+description: Get authentication flows Returns a list of authentication flows.
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548985
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

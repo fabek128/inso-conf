@@ -1,0 +1,21 @@
+_id: req_8b2229fdd273443c88b312483d097bb2
+type: Request
+parentId: fld_daf9a9c336af4c43bc926d393537684a
+modified: 1685445549016
+created: 1685445549016
+url: "{{keycloak_url}}/realms/{{realm}}/protocol/openid-connect/certs"
+name: Get certs information
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1685445549016
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

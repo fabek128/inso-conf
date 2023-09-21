@@ -1,0 +1,27 @@
+_id: req_dad184391c764976b0babb9c0a042ee7
+type: Request
+parentId: fld_a329e47ce7af424698ae99efabad9eb4
+modified: 1685445549072
+created: 1685445549072
+url: "{{keycloak_url}}/admin/realms/{{realm}}/users/{{userId}}/consents"
+name: Get consents granted by the user  [SAT]
+description: Get consents granted by the user
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549072
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

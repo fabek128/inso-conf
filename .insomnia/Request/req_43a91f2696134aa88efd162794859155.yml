@@ -1,0 +1,41 @@
+_id: req_43a91f2696134aa88efd162794859155
+type: Request
+parentId: wrk_ce8807821c144eee8b5adc8f5a7b5a42
+modified: 1692813264759
+created: 1687209574168
+url: https://uat-api-acuerdo.acuerdosencillo.com/api/messages
+name: CARGAR LABELS
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+      "internalid": "sign.modal.advertencia.modifiedMail.resend",
+      "text": "Si editás alguno de los mails, el flujo de firmas se reiniciará dando por inválida cualquier firma recibida hasta el momento. Esto no descuenta un crédito.",
+      "description": "",
+      "languageid": 1,
+      "versionid": 1,
+      "typeid": 1,
+      "pageid": 8
+    }
+parameters: []
+headers:
+  - id: pair_4b238bb0d17b4a9084f1ae1b513a7737
+    name: ""
+    value: ""
+    description: ""
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ1VWhLZ1JyU0czUHRLWDl4Z3VDUHh0TjFVZ3RVRTItYlEwX05TSF9HZWhRIn0.eyJleHAiOjE2OTI4MTQ5NDUsImlhdCI6MTY5MjgxMzE0NSwianRpIjoiZjFhYzQwNDMtZDIzMC00N2Y3LTgzOWYtYWQ5MDNhOTA3MjNkIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmFzYXBzd2ZhY3RvcnkuYXIvcmVhbG1zL0FDVUVSRE9fU0VOQ0lMTE9fVUFUIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJicm9rZXIiLCJhY2NvdW50Il0sInN1YiI6IjQwZmRjNWExLWE3MGItNGIyMy04NTI0LWZmNjU0Njk4OWYxNyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFjX2JhY2tlbmQiLCJzZXNzaW9uX3N0YXRlIjoiMTE1MWE1MDUtZDY0YS00NWM3LWJmZTItM2U5ZTNlNGI5MDJmIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJFTVBSRVNBUyIsIm9mZmxpbmVfYWNjZXNzIiwiVVNVQVJJT1MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsImRlZmF1bHQtcm9sZXMtYWN1ZXJkb19zZW5jaWxsb191YXQiXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwidmlldy1yZWFsbSIsIm1hbmFnZS1pZGVudGl0eS1wcm92aWRlcnMiLCJpbXBlcnNvbmF0aW9uIiwicmVhbG0tYWRtaW4iLCJjcmVhdGUtY2xpZW50IiwibWFuYWdlLXVzZXJzIiwicXVlcnktcmVhbG1zIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsInZpZXctY2xpZW50cyIsIm1hbmFnZS1hdXRob3JpemF0aW9uIiwibWFuYWdlLWNsaWVudHMiLCJxdWVyeS1ncm91cHMiXX0sImJyb2tlciI6eyJyb2xlcyI6WyJyZWFkLXRva2VuIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1hcHBsaWNhdGlvbnMiLCJ2aWV3LWNvbnNlbnQiLCJ2aWV3LWdyb3VwcyIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwibWFuYWdlLWNvbnNlbnQiLCJkZWxldGUtYWNjb3VudCIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJzaWQiOiIxMTUxYTUwNS1kNjRhLTQ1YzctYmZlMi0zZTllM2U0YjkwMmYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IkFjdWVyZG8gU2VuY2lsbG8iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0ZWNAYWN1ZXJkb3NlbmNpbGxvLmNvbSIsImdpdmVuX25hbWUiOiJBY3VlcmRvIiwibG9jYWxlIjoiZXMiLCJmYW1pbHlfbmFtZSI6IlNlbmNpbGxvIiwiZW1haWwiOiJ0ZWNAYWN1ZXJkb3NlbmNpbGxvLmNvbSJ9.SWT5ufIVL_A2CaWKfpswSVZ-H96HINx35JKum6K54lUOdiP5an4rH6Dbq6j0BaO2ACbgNMLv15zOkOMmhOK-PZ7as7qMkrcVa8xuNlMPpLzxMwUk80DzM8boaM-o27KXO3MMh_VTsLIQLXQ9-F2_zlACC6ebRaz_egawPn1bmpV4pwdKELBq2_te8dUiZzV5VV3lR9KjfCe5MKzK2FmaU-HJs5NUr9rytjNauoCPidFZFDjkWOz2R_m7U1PNbWJVXUkzu40D6KjEnqL0d0gJjyR8_L76y2AYOeHTGxYRWkRdwt8_JfN80msTg9u25iV7a9LS-J2Ows9SbsmeViPspQ
+  disabled: false
+metaSortKey: -1687209574168
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

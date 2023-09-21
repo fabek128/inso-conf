@@ -1,0 +1,38 @@
+_id: req_1db48fbb072b4d58a85e6774a9f2f0a1
+type: Request
+parentId: fld_20b52bb3e7854b6894067c2295fe23a5
+modified: 1685445549054
+created: 1685445549054
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/roles/Sneaky\
+  /composites"
+name: "Delete a role by name composite [SAT] "
+description: Remove roles from the role’s composite
+method: DELETE
+body:
+  mimeType: application/json
+  text: |-
+    [{
+        "name": "Sneaky-sub",
+        "composite": false,
+        "clientRole": true,
+        "containerId": "647ba3cc-5d4d-4a5a-a67f-ed594f43a5b6",
+        "attributes": {},
+        "description": "sub comp"
+    }]
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549054
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,27 @@
+_id: req_729e89bd6c6d40738c4b7cf8fa7c67fc
+type: Request
+parentId: fld_20b52bb3e7854b6894067c2295fe23a5
+modified: 1685445549057
+created: 1685445549057
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles"
+name: "Get all roles for the realm or client [SAT] "
+description: Get all roles for the realm or client
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549057
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

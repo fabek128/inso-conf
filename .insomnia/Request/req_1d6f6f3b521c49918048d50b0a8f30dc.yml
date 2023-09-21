@@ -1,0 +1,34 @@
+_id: req_1d6f6f3b521c49918048d50b0a8f30dc
+type: Request
+parentId: fld_a329e47ce7af424698ae99efabad9eb4
+modified: 1685445549077
+created: 1685445549077
+url: "{{keycloak_url}}/admin/realms/{{realm}}/users/{{userId}}/federated-identi\
+  ty/{{socialProvider}}"
+name: Add a social login provider to the user [SAT]
+description: Add a social login provider to the user
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"userId": "56f6c53f-5150-4b42-9757-4c3dd4e7d947",
+    	"userName": "superman"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549077
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

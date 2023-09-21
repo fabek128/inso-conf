@@ -1,0 +1,37 @@
+_id: req_662077e1352044aaa81b647cf473b22f
+type: Request
+parentId: fld_20b52bb3e7854b6894067c2295fe23a5
+modified: 1685445549053
+created: 1685445549053
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/roles/Sneaky"
+name: "Update a role by name [SAT] "
+description: Update a role by name
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "id": "647ba3cc-5d4d-4a5a-a67f-ed594f43a5b6",
+        "name": "Sneaky",
+        "composite": false,
+        "clientRole": true,
+        "containerId": "5725d549-faac-4a30-bab3-7b8370c19ce3",
+        "attributes": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549053
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

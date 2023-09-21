@@ -1,0 +1,28 @@
+_id: req_44e3e4785ee646d8aa0b57ad9c05ae7a
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549015
+created: 1685445549015
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientIdServiceAccount}\
+  }/service-account-user"
+name: "Get a user dedicated to the service account [SAT] "
+description: Get a user dedicated to the service account
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549015
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

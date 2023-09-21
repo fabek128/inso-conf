@@ -1,0 +1,28 @@
+_id: req_ed7129fc60fc4029b0c3eba8d2180372
+type: Request
+parentId: fld_a329e47ce7af424698ae99efabad9eb4
+modified: 1685986566182
+created: 1685445549080
+url: "{{keycloakurl}}/admin/realms/{{realmname}}/users/04d92bca-0a6d-4b07-9f6e-\
+  c8ed35fa7af8/sessions"
+name: Get sessions associated with the user  [SAT]
+description: Get sessions associated with the user
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549080
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

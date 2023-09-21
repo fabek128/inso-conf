@@ -1,0 +1,83 @@
+_id: req_00d09a944ad44f2ea45acde72594ecb3
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549009
+created: 1685445549009
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients"
+name: Create a new client [SAT]
+description: Create a new client Client’s client_id must be unique!
+method: POST
+body:
+  mimeType: application/json
+  text: |-2
+        {
+            "clientId": "new-client-from-rest-api",
+            "name": "new-client-from-rest-api",
+            "adminUrl": "http://localhost:4200",
+            "alwaysDisplayInConsole": false,
+            "access": {
+                "view": true,
+                "configure": true,
+                "manage": true
+            },
+            "attributes": {},
+            "authenticationFlowBindingOverrides" : {},
+            "authorizationServicesEnabled": false,
+            "bearerOnly": false,
+            "directAccessGrantsEnabled": true,
+            "enabled": true,
+            "protocol": "openid-connect",
+            "description": "rest-api",
+
+            "rootUrl": "${authBaseUrl}",
+            "baseUrl": "/realms/heroes/account/",
+            "surrogateAuthRequired": false,
+            "clientAuthenticatorType": "client-secret",
+            "defaultRoles": [
+                "manage-account",
+                "view-profile"
+            ],
+            "redirectUris": [
+                "/realms/heroes/account/*"
+            ],
+            "webOrigins": [],
+            "notBefore": 0,
+            "consentRequired": false,
+            "standardFlowEnabled": true,
+            "implicitFlowEnabled": false,
+            "serviceAccountsEnabled": false,
+            "publicClient": false,
+            "frontchannelLogout": false,
+            "fullScopeAllowed": false,
+            "nodeReRegistrationTimeout": 0,
+            "defaultClientScopes": [
+                "web-origins",
+                "role_list",
+                "profile",
+                "roles",
+                "email"
+            ],
+            "optionalClientScopes": [
+                "address",
+                "phone",
+                "offline_access",
+                "microprofile-jwt"
+            ]
+        }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549009
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

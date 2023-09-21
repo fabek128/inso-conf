@@ -1,0 +1,50 @@
+_id: req_ac67cd6711204634aa0e4b8c94dfeeb5
+type: Request
+parentId: fld_a329e47ce7af424698ae99efabad9eb4
+modified: 1685445549070
+created: 1685445549070
+url: "{{keycloak_url}}/admin/realms/{{realm}}/users/count"
+name: Returns the number of users that match the given criteria [SAT]
+description: It can be called in three different ways. 1. Don’t specify any
+  criteria and pass {@code null}. The number of all users within that realm will
+  be returned. <p> 2. If {@code search} is specified other criteria such as
+  {@code last} will be ignored even though you set them. The {@code search}
+  string will be matched against the first and last name, the username and the
+  email of a user. <p> 3. If {@code search} is unspecified but any of {@code
+  last}, {@code first}, {@code email} or {@code username} those criteria are
+  matched against their respective fields on a user entity. Combined with a
+  logical and.
+method: GET
+body: {}
+parameters:
+  - name: email
+    value: ""
+    disabled: true
+  - name: firstName
+    value: ""
+    disabled: true
+  - name: lastName
+    value: ""
+    disabled: true
+  - name: search
+    value: ""
+    disabled: true
+  - name: username
+    value: ""
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549070
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

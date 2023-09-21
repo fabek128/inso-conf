@@ -1,0 +1,29 @@
+_id: req_6dadbb3e8c244a21a1bb1c8e80d402d1
+type: Request
+parentId: fld_20b52bb3e7854b6894067c2295fe23a5
+modified: 1685445549056
+created: 1685445549056
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/roles/Sneaky\
+  /management/permissions"
+name: "Return initialized auth permissions [SAT] "
+description: Return object stating whether role Authoirzation permissions have
+  been initialized or not and a reference
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549056
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

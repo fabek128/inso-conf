@@ -1,0 +1,36 @@
+_id: req_d03c782e159b45a7892b05134776323b
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548986
+created: 1685445548986
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/flows/{{flowId}}"
+name: Update an authentication flow [SAT]
+description: Update an authentication flow
+method: PUT
+body:
+  mimeType: application/json
+  text: >-
+    {
+        "alias": "browser",
+        "description": "browser based authentication - still getting error, but updates me",
+        "providerId": "basic-flow",
+        "topLevel": true,
+        "builtIn": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548986
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

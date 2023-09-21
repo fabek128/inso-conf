@@ -1,0 +1,27 @@
+_id: req_c11a531bde7f4b0193def7e4db01e029
+type: Request
+parentId: fld_67075bb3ca954f15bad82e688a874d05
+modified: 1685445548999
+created: 1685445548999
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients-initial-access"
+name: Get new initial access tokens [SAT]
+description: Get a list of new initial access tokens
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548999
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

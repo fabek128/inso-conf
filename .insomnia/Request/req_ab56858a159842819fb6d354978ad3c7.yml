@@ -1,0 +1,31 @@
+_id: req_ab56858a159842819fb6d354978ad3c7
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549013
+created: 1685445549013
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/optional-cli\
+  ent-scopes/{{clientScopeId}}"
+name: Delete optional client scope to client [SAT]
+description: Delete optional client scope to client
+method: DELETE
+body: {}
+parameters:
+  - name: scope
+    value: ""
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549013
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

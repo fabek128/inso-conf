@@ -1,0 +1,21 @@
+_id: req_f4bbcfb75aca4c7b803f2903596c895b
+type: Request
+parentId: wrk_ce8807821c144eee8b5adc8f5a7b5a42
+modified: 1687283536063
+created: 1685444348962
+url: https://qa-node-acuerdo.acuerdosencillo.com/api/document/306/starCircuitpdf
+name: NODE - starCircuitpdf
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1685444348962
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

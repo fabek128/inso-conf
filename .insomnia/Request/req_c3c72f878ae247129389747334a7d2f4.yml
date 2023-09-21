@@ -1,0 +1,29 @@
+_id: req_c3c72f878ae247129389747334a7d2f4
+type: Request
+parentId: fld_721d210e2601438a8e6c7dce6d4a8b62
+modified: 1685445549064
+created: 1685445549064
+url: "{{keycloak_url}}/admin/realms/{{realm}}/client-scopes/{{realmClientScopeI\
+  d}}/scope-mappings/clients/{{clientId}}/composite"
+name: "Get the  effective client roles  [SAT] "
+description: Get effective client roles Returns the roles for the client that
+  are associated with the client’s scope.
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549064
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

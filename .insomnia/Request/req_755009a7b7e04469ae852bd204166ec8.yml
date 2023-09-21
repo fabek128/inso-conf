@@ -1,0 +1,31 @@
+_id: req_755009a7b7e04469ae852bd204166ec8
+type: Request
+parentId: fld_721d210e2601438a8e6c7dce6d4a8b62
+modified: 1685445549068
+created: 1685445549068
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/scope-mappin\
+  gs/realm/composite"
+name: "Get effective realm-level roles that are available to attach to this
+  client’s scope  [SAT] "
+description: Get effective realm-level roles associated with the client’s scope
+  What this does is recurse any composite roles associated with the client’s
+  scope and adds the roles to this lists.
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549068
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

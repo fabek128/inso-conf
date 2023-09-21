@@ -1,0 +1,37 @@
+_id: req_6bedebd855c44a388d991a4003186cfb
+type: Request
+parentId: fld_20b52bb3e7854b6894067c2295fe23a5
+modified: 1685445549058
+created: 1685445549058
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles/{{roleName}}/composites"
+name: "Delete a composite to the role [SAT] "
+description: |
+  Delete a composite to the role
+method: DELETE
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "name": "Sub-Investigator",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "Investigator",
+        "attributes": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549058
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

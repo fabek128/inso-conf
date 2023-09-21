@@ -1,0 +1,28 @@
+_id: req_9847f442d0d3476b8580b4bfaafc6cfd
+type: Request
+parentId: fld_0d4d96d980b441918f4bd15cbdf0fe53
+modified: 1685445549068
+created: 1685445549068
+url: "{{keycloak_url}}/admin/realms/{{realm}}/user-storage/{{userStorageId}}/name"
+name: "Display simple name of usage provider  [SAT] "
+description: Need this for admin console to display simple name of provider when
+  displaying user detail
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549068
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

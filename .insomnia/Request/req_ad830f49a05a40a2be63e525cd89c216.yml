@@ -1,0 +1,29 @@
+_id: req_ad830f49a05a40a2be63e525cd89c216
+type: Request
+parentId: fld_3820ee02d7c049c093439b62c426dc67
+modified: 1685445549062
+created: 1685445549062
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles-by-id/{{roleId}}/management\
+  /permissions"
+name: Get role Authoirzation permissions  [SAT]
+description: Return object stating whether role Authoirzation permissions have
+  been initialized or not and a reference
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549062
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

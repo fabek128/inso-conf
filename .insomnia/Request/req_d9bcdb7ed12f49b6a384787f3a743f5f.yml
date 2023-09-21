@@ -1,0 +1,32 @@
+_id: req_d9bcdb7ed12f49b6a384787f3a743f5f
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548988
+created: 1685445548988
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/flows/{{LowerCaseA\
+  liasFlow}}/executions/execution"
+name: Add new authentication executions to a flow [SAT]
+description: |-
+  Add new authentication execution to a flow
+  *** works only with a copied Flow!! 
+method: POST
+body:
+  mimeType: application/json
+  text: '{"provider":"reset-password"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548988
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

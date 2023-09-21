@@ -1,0 +1,15 @@
+_id: fld_dedd81bd2fc64381bb3f9ad2b0d49f4c
+type: RequestGroup
+parentId: fld_95483b7a55804eff91350ba834a458a9
+modified: 1685445569015
+created: 1685445548972
+name: KeycloakRestAPI
+description: "[https://iam.shurjomukhi.com.bd/auth/](https://iam.shurjomukhi.com.bd/auth/)"
+environment:
+  keycloak_url: https://iam.shurjomukhi.com.bd/auth
+  realm: praniSheba-Shop
+  rest_client: rest_client
+  clientId: rest_client
+  userId: aa7bcb60-ba0d-4c92-876d-3a94f625b5e4
+environmentPropertyOrder: null
+metaSortKey: -1685445493199

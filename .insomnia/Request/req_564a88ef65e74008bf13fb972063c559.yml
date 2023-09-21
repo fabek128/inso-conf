@@ -1,0 +1,38 @@
+_id: req_564a88ef65e74008bf13fb972063c559
+type: Request
+parentId: fld_20b52bb3e7854b6894067c2295fe23a5
+modified: 1685445549054
+created: 1685445549054
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/roles/Sneaky\
+  /composites"
+name: "Update a role by name composite [SAT]  "
+description: Update a role by name
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    [{
+        "name": "Sneaky-sub",
+        "composite": false,
+        "clientRole": true,
+        "containerId": "647ba3cc-5d4d-4a5a-a67f-ed594f43a5b6",
+        "attributes": {},
+        "description": "sub comp"
+    }]
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549054
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

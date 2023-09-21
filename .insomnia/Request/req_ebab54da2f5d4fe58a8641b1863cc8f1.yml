@@ -1,0 +1,38 @@
+_id: req_ebab54da2f5d4fe58a8641b1863cc8f1
+type: Request
+parentId: fld_3820ee02d7c049c093439b62c426dc67
+modified: 1685445549061
+created: 1685445549061
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles-by-id/{{roleId}}/composites"
+name: Delete role’s children by providing the role is a composite [SAT]
+description: Delete role’s children Returns a set of role’s children provided
+  the role is a composite.
+method: DELETE
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "id": "ea522e2b-1e8f-42f6-9cc6-981fd5dd2114",
+        "name": "Investigator",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "heroes",
+        "attributes": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549061
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

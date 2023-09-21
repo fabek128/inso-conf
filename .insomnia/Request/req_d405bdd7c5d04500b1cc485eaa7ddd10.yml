@@ -1,0 +1,72 @@
+_id: req_d405bdd7c5d04500b1cc485eaa7ddd10
+type: Request
+parentId: fld_ef927c241dbc4a649d757df8222af3d7
+modified: 1685445549003
+created: 1685445549003
+url: "{{keycloak_url}}/admin/realms/{{realm}}/client-scopes/{{clientScopeId}}"
+name: Update the client scope [SAT]
+description: Update the client scope
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "id": "4f841085-b7be-4596-b99b-15422e16bf0b",
+        "name": "email",
+        "description": "OpenID Connect built-in scope: email +",
+        "protocol": "openid-connect",
+        "attributes": {
+            "include.in.token.scope": "true",
+            "display.on.consent.screen": "true",
+            "consent.screen.text": "${emailScopeConsentText}"
+        },
+        "protocolMappers": [
+            {
+                "id": "62224d4c-7181-4790-a3c9-71cdbf1516a5",
+                "name": "email",
+                "protocol": "openid-connect",
+                "protocolMapper": "oidc-usermodel-property-mapper",
+                "consentRequired": false,
+                "config": {
+                    "userinfo.token.claim": "true",
+                    "user.attribute": "email",
+                    "id.token.claim": "true",
+                    "access.token.claim": "true",
+                    "claim.name": "email",
+                    "jsonType.label": "String"
+                }
+            },
+            {
+                "id": "e7b52fef-f525-4314-abf3-267d9f48082e",
+                "name": "email verified",
+                "protocol": "openid-connect",
+                "protocolMapper": "oidc-usermodel-property-mapper",
+                "consentRequired": false,
+                "config": {
+                    "userinfo.token.claim": "true",
+                    "user.attribute": "emailVerified",
+                    "id.token.claim": "true",
+                    "access.token.claim": "true",
+                    "claim.name": "email_verified",
+                    "jsonType.label": "boolean"
+                }
+            }
+        ]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549003
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,26 @@
+_id: req_5b42d6db523c45b5b90ec1bed41b5bfc
+type: Request
+parentId: wrk_ce8807821c144eee8b5adc8f5a7b5a42
+modified: 1693599626430
+created: 1690827800987
+url: https://qa-node-acuerdo.acuerdosencillo.com/api/processmessage/enviar_solicitud_email
+name: New Request
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: '{"messageId":"01002d1c-1a22-48ee-bfac-35e4221cb860","receiptHandle":"AQEB1dFS8U5YiuYAbkOj8Z3TCbRLX4JiKv0D+4LlxooYpIUE6ahKu4ejd+4Rs05FoA9DZBT8SswZ5j/c5wJwP7Un71bgOCSjLVODVvk1uWNh0gllNR/ujvctw89rEixmhOhXBLFtVRA7OveZI4VtpKgadPJrZVImrTchFWUGtd5L4lPUyCSZRGf4qab0kJOsIHiyOMoC9nWDZc2Lex2eVjuhnAXtvHJ27WLh3Iq69vVaQ4nStooyeJJSpmgUMUdPVp5PeGaykZ0d8niZOqAXEk4A4PjVYVYrIWJnV/DzOiRuNA8/wil0pdKOy83tbITkUvGtAm6maaA83I9nvaNmcLDxNWNDobn53tvxAXKwyG8h5bQxYNR59Ki1e8VSA4/9W0BL20j0+wARy6fhh53+o9sUbw==","body":"{\"name\":null,\"externalId\":\"GMcf6zKCy6YVoXnewxX999\",\"data\":{\"documentId\":1583,\"accountId\":27,\"email\":\"fabio@smartheads.com.ar\",\"name\":\"fabio
+    zilberman\",\"firstname\":\"fabio\",\"lastname\":\"zilberman\",\"datesigned\":null,\"datelastview\":null,\"state\":\"SOLICITUD_ENVIADA\",\"typeSignatory\":\"SIGNER\",\"deleteme\":null,\"tokenexpire\":null,\"weight\":2,\"id\":2903},\"accountid\":null,\"checkDb\":true}","messageAttributes":{"tipo":{"stringValue":"ENVIAR_MAIL_SOLICITUD_FIRMANTE","dataType":"String"},"JMS_SQSMessageType":{"stringValue":"text","dataType":"String"}},"md5OfBody":"3d1cb7ee30814f279c7f8c0862de8499","eventSource":"aws:sqs","eventSourceARN":"arn:aws:sqs:us-east-1:913123310997:ac_node_process","awsRegion":"us-east-1"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1690827800987
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

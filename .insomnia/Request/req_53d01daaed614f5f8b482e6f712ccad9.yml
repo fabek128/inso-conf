@@ -1,0 +1,28 @@
+_id: req_53d01daaed614f5f8b482e6f712ccad9
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549003
+created: 1685445549003
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients"
+name: Get clients [SAT]
+description: Get clients belonging to the realm Returns a list of clients
+  belonging to the realm
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549003
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

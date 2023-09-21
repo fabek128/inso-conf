@@ -1,0 +1,34 @@
+_id: req_25b28a3b22194ea680f7a677570c418e
+type: Request
+parentId: fld_897131f0b56a4245921620678a6385ab
+modified: 1685445549021
+created: 1685445549021
+url: "{{keycloak_url}}/admin/realms/{{realm}}/groups"
+name: "Create a group [SAT] "
+description: create or add a top level realm groupSet or create child
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "anime",
+    	"path": "/anime",
+    	"subGroups": []
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549021
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

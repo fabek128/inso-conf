@@ -1,0 +1,28 @@
+_id: req_bfc4e7eef5034f7c86d8eff88153d157
+type: Request
+parentId: fld_9597d1b16b0e4fa491042b9ba2172ad2
+modified: 1685445549035
+created: 1685445549035
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/protocol-map\
+  pers/models/af0bf361-7882-4d10-a38c-40ffddba9a59"
+name: Update the mapper [SAT]  Copy
+description: Update the mapper
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549035
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

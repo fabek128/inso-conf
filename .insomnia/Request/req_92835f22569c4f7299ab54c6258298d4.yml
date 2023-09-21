@@ -1,0 +1,31 @@
+_id: req_92835f22569c4f7299ab54c6258298d4
+type: Request
+parentId: fld_94f8b8f4e7274690b0a1595e11546e94
+modified: 1685445549042
+created: 1685445549042
+url: "{{keycloak_url}}/admin/realms/{{realm}}/events"
+name: "Delete events [SAT] "
+description: |+
+  Delete all events
+
+
+
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549042
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

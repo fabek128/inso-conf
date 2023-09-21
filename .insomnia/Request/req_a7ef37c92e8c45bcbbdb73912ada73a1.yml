@@ -1,0 +1,34 @@
+_id: req_a7ef37c92e8c45bcbbdb73912ada73a1
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549008
+created: 1685445549008
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/management/p\
+  ermissions"
+name: Update client authorization permissions [SAT]
+description: Return object stating whether client Authorization permissions have
+  been initialized or not and a reference
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"enabled": "false"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549008
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

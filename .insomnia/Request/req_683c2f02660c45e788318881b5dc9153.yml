@@ -1,0 +1,28 @@
+_id: req_683c2f02660c45e788318881b5dc9153
+type: Request
+parentId: fld_721d210e2601438a8e6c7dce6d4a8b62
+modified: 1685445549062
+created: 1685445549062
+url: "{{keycloak_url}}/admin/realms/{{realm}}/client-scopes/{{realmClientScopeI\
+  d}}/scope-mappings"
+name: Get all scope mappings for the client [SAT]
+description: Get all scope mappings for the client
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549062
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

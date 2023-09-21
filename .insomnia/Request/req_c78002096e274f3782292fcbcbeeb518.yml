@@ -1,0 +1,54 @@
+_id: req_c78002096e274f3782292fcbcbeeb518
+type: Request
+parentId: wrk_ce8807821c144eee8b5adc8f5a7b5a42
+modified: 1694809428870
+created: 1690488311522
+url: auth.acuerdosencillo.com/realms/ACUERDO_SENCILLO_UAT/protocol/openid-connect/token
+name: ACTUALIZAR TOKEN UAT
+description: ""
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - value: tec@acuerdosencillo.com
+      name: username
+      disabled: false
+      id: pair_8bc053c319c34f87a941efdd0d719730
+    - value: acuerdo
+      name: password
+      disabled: false
+      id: pair_136f73b7147142c6ad6a73852d9ee5b6
+    - value: password
+      name: grant_type
+      disabled: false
+      id: pair_572402fb09a84c8babb2a0831c8976a1
+    - value: "{{client_id}}"
+      name: client_id
+      disabled: false
+      id: pair_5e9a0d2f1f02430fa45537a2bb2812c8
+    - value: vwkQaoUhXrw6msXbwWT2Vrq7mFBH9DQy
+      name: client_secret
+      disabled: false
+      id: pair_b60ce683e780415a97e5fb929f30a491
+    - value: openid
+      name: scope
+      disabled: false
+      id: pair_e200057d966d44cb8585b1fa9661d306
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+    id: pair_7e1d84a0965947c4b1624e6bf2c82174
+  - id: pair_0a4864768781423cb4a18779bdc67cd9
+    name: ""
+    value: ""
+    description: ""
+authentication: {}
+metaSortKey: -1686297967646
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

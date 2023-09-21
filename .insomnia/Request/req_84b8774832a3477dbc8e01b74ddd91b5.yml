@@ -1,0 +1,29 @@
+_id: req_84b8774832a3477dbc8e01b74ddd91b5
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548990
+created: 1685445548990
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/unregistered-requi\
+  red-actions"
+name: Get unregistered required actions [SAT]
+description: Get unregistered required actions Returns a list of unregistered
+  required actions.
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548990
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

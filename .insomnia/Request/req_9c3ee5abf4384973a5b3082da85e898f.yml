@@ -1,0 +1,28 @@
+_id: req_9c3ee5abf4384973a5b3082da85e898f
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548994
+created: 1685445548994
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/required-actions/{\
+  {aliasRequiredAction}}"
+name: Delete required action [SAT]
+description: Delete required action
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548994
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

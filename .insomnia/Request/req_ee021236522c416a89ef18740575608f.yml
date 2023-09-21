@@ -1,0 +1,27 @@
+_id: req_ee021236522c416a89ef18740575608f
+type: Request
+parentId: fld_daf9a9c336af4c43bc926d393537684a
+modified: 1685445549017
+created: 1685445549017
+url: "{{keycloak_url}}/realms/{{realm}}/protocol/openid-connect/userinfo"
+name: User Info
+description: Get configuration information
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549017
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

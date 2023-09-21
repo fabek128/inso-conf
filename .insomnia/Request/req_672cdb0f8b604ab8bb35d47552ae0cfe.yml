@@ -1,0 +1,29 @@
+_id: req_672cdb0f8b604ab8bb35d47552ae0cfe
+type: Request
+parentId: fld_76fc1cc9855f4297ad629efd051ba59f
+modified: 1685445549049
+created: 1685445549049
+url: "{{keycloak_url}}/admin/realms/{{realm}}/groups/{{groupId}}/role-mappings"
+name: "Get role mappings [SAT] "
+description: |+
+  Get role mappings
+
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549049
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,27 @@
+_id: env_196fa8cf5d77452abf15411cc9d770ab
+type: Environment
+parentId: env_c5f3b5375b744351978fb71b07d18e49
+modified: 1686022143743
+created: 1685445693345
+name: ACUERDO_SENCILLO_ENV
+data:
+  keycloakurl: https://auth.asapswfactory.ar
+  realmname: ACUERDO_SENCILLO_QA
+  username: tobias@tobias.com
+  password: "123456"
+  client_id: ac_backend
+  client_secret: mqIjSHDonsBO5mYvnfaqFPqbZNzgPlwY
+  token: "{% response 'body', 'req_c8eced6d5a3b44f9b148eb60a75fbbab',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'when-expired', 250 %}"
+dataPropertyOrder:
+  "&":
+    - keycloakurl
+    - realmname
+    - username
+    - password
+    - client_id
+    - client_secret
+    - token
+color: null
+isPrivate: false
+metaSortKey: 1685445693345

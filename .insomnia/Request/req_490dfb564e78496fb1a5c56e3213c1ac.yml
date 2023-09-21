@@ -1,0 +1,33 @@
+_id: req_490dfb564e78496fb1a5c56e3213c1ac
+type: Request
+parentId: fld_4a95f6dc689d45eabe56ffccbe7fe64a
+modified: 1685445549010
+created: 1685445549010
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients/{{clientId}}/evaluate-sco\
+  pes/scope-mappings/{{containerId}}/granted"
+name: Get effective scope mapping of all roles [SAT]
+description: Get effective scope mapping of all roles of particular role
+  container, which this client is defacto allowed to have in the accessToken
+  issued for him.
+method: GET
+body: {}
+parameters:
+  - name: scope
+    value: ""
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549010
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

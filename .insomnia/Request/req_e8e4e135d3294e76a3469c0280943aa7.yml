@@ -1,0 +1,30 @@
+_id: req_e8e4e135d3294e76a3469c0280943aa7
+type: Request
+parentId: fld_94f8b8f4e7274690b0a1595e11546e94
+modified: 1685445549039
+created: 1685445549039
+url: "{{keycloak_url}}/admin/realms/{{realm}}/default-groups"
+name: Get group hierarchy [SAT]
+description: |+
+  Get group hierarchy.
+
+
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549039
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

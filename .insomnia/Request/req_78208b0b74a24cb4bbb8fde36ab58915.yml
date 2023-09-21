@@ -1,0 +1,28 @@
+_id: req_78208b0b74a24cb4bbb8fde36ab58915
+type: Request
+parentId: fld_76fc1cc9855f4297ad629efd051ba59f
+modified: 1685445549052
+created: 1685445549052
+url: "{{keycloak_url}}/admin/realms/{{realm}}/users/{{userId}}/role-mappings/re\
+  alm/available"
+name: "Get realm-level roles that can be mapped [SAT] "
+description: Get realm-level roles that can be mapped
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549052
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,28 @@
+_id: req_c9ecfd1d25b243099c7c5bc39429d1c7
+type: Request
+parentId: fld_9597d1b16b0e4fa491042b9ba2172ad2
+modified: 1685445549032
+created: 1685445549032
+url: "{{keycloak_url}}/admin/realms/{{realm}}/client-scopes/{{clientScopeId}}/p\
+  rotocol-mappers/models"
+name: "Get mappers [SAT]  "
+description: Get mappers
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549032
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,27 @@
+_id: req_a1e729eebd844c11bf896fc86c4e5e44
+type: Request
+parentId: fld_3820ee02d7c049c093439b62c426dc67
+modified: 1685445549061
+created: 1685445549061
+url: "{{keycloak_url}}/admin/realms/{{realm}}/roles-by-id/{{roleId}}"
+name: Update a specific role’s representation [SAT]  Copy Copy
+description: Update a specific role’s representation
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549061
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

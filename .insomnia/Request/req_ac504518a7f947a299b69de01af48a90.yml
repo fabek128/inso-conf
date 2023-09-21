@@ -1,0 +1,36 @@
+_id: req_ac504518a7f947a299b69de01af48a90
+type: Request
+parentId: fld_9597d1b16b0e4fa491042b9ba2172ad2
+modified: 1685445549031
+created: 1685445549031
+url: "{{keycloak_url}}/admin/realms/{{realm}}/client-scopes/{{clientScopeId}}/p\
+  rotocol-mappers/add-models"
+name: "Create mappers to identity provider [SAT] "
+description: "Create mappers to identity provider "
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    [{
+    	"name": "protocol-mapper-2",
+    	"protocol": "openid-connect",
+    	"protocolMapper": "oidc-usermodel-property-mapper",
+    	"config": {}
+    }]
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445549031
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

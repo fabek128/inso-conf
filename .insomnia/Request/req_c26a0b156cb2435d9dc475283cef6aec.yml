@@ -1,0 +1,28 @@
+_id: req_c26a0b156cb2435d9dc475283cef6aec
+type: Request
+parentId: fld_277482af90694b2a8c4e9c0308e453dd
+modified: 1685445548994
+created: 1685445548994
+url: "{{keycloak_url}}/admin/realms/{{realm}}/authentication/executions/{{execu\
+  tionId}}"
+name: Delete authentication execution [SAT]
+description: Delete execution
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548994
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

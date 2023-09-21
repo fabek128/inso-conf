@@ -1,0 +1,28 @@
+_id: req_a0c0cd427bf5490487dc9ff042cdf646
+type: Request
+parentId: fld_67075bb3ca954f15bad82e688a874d05
+modified: 1685445548999
+created: 1685445548999
+url: "{{keycloak_url}}/admin/realms/{{realm}}/clients-initial-access/50fadd33-d\
+  8ee-47cc-b094-33fff7535787"
+name: Delete initial access token with id [SAT] Copy
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{token}}"
+  prefix: ""
+metaSortKey: -1685445548999
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
